@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="borderCSS" maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0"
+	prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.myPortfolio.controller.MoviePlayerController">
+	<top>
+		<MenuBar id="menuBarCSS" BorderPane.alignment="CENTER">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+						<MenuItem fx:id="openMenu" mnemonicParsing="false" text="Open Movie" />
+						<MenuItem fx:id="closeMenu" mnemonicParsing="false" text="Close" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Help">
+					<items>
+						<MenuItem fx:id="aboutMenu" mnemonicParsing="false" text="About" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+	</top>
+	<center>
+		<MediaView id="moviePlayerCSS" fx:id="moviePlayer"
+			fitHeight="200.0" fitWidth="200.0" BorderPane.alignment="CENTER" />
+	</center>
+	<bottom>
+		<AnchorPane id="archonPaneCSS" prefHeight="70.0" prefWidth="600.0"
+			BorderPane.alignment="CENTER">
+			<children>
+				<Slider id="movieSliderCSS" fx:id="movieSlider" maxWidth="1.7976931348623157E308"
+					prefHeight="15.0" prefWidth="600.0" AnchorPane.bottomAnchor="60.0"
+					AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+				<Button id="previousButtonCSS" fx:id="perviousButton"
+					layoutX="8.0" layoutY="39.0" maxHeight="1.7976931348623157E308"
+					mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0"
+					AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" />
+				<ToggleButton id="playStopButtonCSS" fx:id="playStopButton"
+					layoutX="70.0" maxHeight="1.7976931348623157E308" mnemonicParsing="false"
+					prefHeight="32.0" prefWidth="32.0" AnchorPane.bottomAnchor="20.0"
+					AnchorPane.leftAnchor="60.0" />
+				<Button id="stopButtonCSS" fx:id="stopButton" maxHeight="40.0"
+					maxWidth="40.0" mnemonicParsing="false" prefHeight="32.0"
+					prefWidth="32.0" AnchorPane.bottomAnchor="20.0"
+					AnchorPane.leftAnchor="110.0" />
+				<Button id="nextButtonCSS" fx:id="nextButton" layoutX="150.0"
+					maxHeight="1.7976931348623157E308" mnemonicParsing="false"
+					prefHeight="32.0" prefWidth="32.0" AnchorPane.bottomAnchor="20.0"
+					AnchorPane.leftAnchor="160.0" />
+				<Slider id="volumeSliderCSS" fx:id="volumeSlider" layoutX="393.0"
+					layoutY="3.0" maxHeight="1.7976931348623157E308" maxWidth="150.0"
+					prefHeight="40.0" prefWidth="150.0" AnchorPane.bottomAnchor="13.0"
+					AnchorPane.rightAnchor="11.0">
+					<padding>
+						<Insets bottom="10.0" />
+					</padding>
+				</Slider>
+				<Button id="repeatButtonCSS" fx:id="repeatButton" maxHeight="40.0"
+					maxWidth="40.0" mnemonicParsing="false" prefHeight="32.0"
+					prefWidth="32.0" AnchorPane.bottomAnchor="20.0"
+					AnchorPane.leftAnchor="260.0" />
+				<Label id="labelCSS" fx:id="timeLabel" contentDisplay="CENTER"
+					layoutX="332.0" prefHeight="32.0" prefWidth="101.0" text="00:00/00:00"
+					textAlignment="CENTER" AnchorPane.bottomAnchor="20.0"
+					AnchorPane.leftAnchor="315.0">
+					<font>
+						<Font size="18.0" />
+					</font>
+					<textFill>
+						<RadialGradient centerX="0.7" centerY="1.0" radius="0.5">
+							<stops>
+								<Stop color="BLACK" />
+								<Stop color="WHITE" offset="1.0" />
+							</stops>
+						</RadialGradient>
+					</textFill>
+				</Label>
+				<ToggleButton id="muteButtonCSS" fx:id="muteButton"
+					mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0"
+					AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="210.0" />
+			</children>
+		</AnchorPane>
+	</bottom>
+</BorderPane>

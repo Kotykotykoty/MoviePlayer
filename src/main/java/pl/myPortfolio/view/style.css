@@ -1,0 +1,102 @@
+
+#moviePlayerCSS{
+	-fx-background-color: black;
+}
+#borderCSS{
+	-fx-background-color: black;
+	-fx-border-radius: 80.0;
+	
+}
+#archonPaneCSS{
+	-fx-border-color: midnightblue;
+	-fx-border-style: solid ;
+	-fx-border-width: 1.0;
+	-fx-bounds-type: logical ;
+	-fx-border-radius: 10.0;
+	-fx-background-color: radial-gradient(radius 400.0%,black ,midnightblue);
+	
+}
+#movieSliderCSS{
+ -fx-background-color: linear-gradient(to bottom right, black, midnightblue) ;
+ -fx-border-radius: 5.0;	
+}
+
+/* Buttton */
+
+#stopButtonCSS{
+	-fx-background-image: url("../res/stop.png") ;
+	-fx-background-color: black;
+	-fx-border-color: blue;
+	-fx-border-width: 1.0;
+
+	
+}
+#muteButtonCSS{
+	-fx-background-image: url("../res/mute.png") ;
+	-fx-background-color: black;
+	-fx-border-color: blue;
+	-fx-border-width: 1.0;
+}
+#repeatButtonCSS{
+	-fx-background-image: url("../res/repeat.png") ;
+	-fx-background-color: black;
+	-fx-border-color: blue;
+	-fx-border-width: 1.0;
+	
+}
+
+#labelCSS{
+	-fx-background-color: radial-gradient(radius 400.0%,black ,midnightblue);
+	-fx-border-color: blue;
+	-fx-border-width: 1.0;
+
+}
+#previousButtonCSS{
+	-fx-background-image: url("../res/wtyl.png") ;
+	-fx-background-color: black;
+	-fx-border-color: blue;
+	-fx-border-width: 1.0;
+}
+#nextButtonCSS{
+	-fx-background-image: url("../res/naprzod.png") ;
+	-fx-background-color: black;
+	-fx-border-color: blue;
+	-fx-border-width: 1.0;
+}
+#playStopButtonCSS{
+	-fx-background-image: url("../res/play.png") ;
+	-fx-background-color: black;
+	-fx-border-color: blue;
+	-fx-border-width: 1.0;
+}
+
+/*Buttons hover */
+
+#nextButtonCSS:hover{
+	-fx-border-color: indigo;
+	-fx-border-width: 2.0;
+}
+#previousButtonCSS:hover{
+	-fx-border-color: indigo;
+	-fx-border-width: 2.0;
+}
+#stopButtonCSS:hover{
+	-fx-border-color: indigo;
+	-fx-border-width: 2.0;	
+}
+
+#playStopButtonCSS:hover{
+	-fx-border-color: indigo;
+	-fx-border-width: 2.0;
+}
+
+#repeatButtonCSS:hover{
+	-fx-border-color: indigo;
+	-fx-border-width: 2.0;
+	
+}
+
+#muteButtonCSS:hover{
+	-fx-border-color: indigo;
+	-fx-border-width: 2.0;
+}

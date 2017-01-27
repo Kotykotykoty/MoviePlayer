@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<TextArea editable="false" prefHeight="200.0" prefWidth="200.0"
+			promptText="Help Menu"
+			text="Odtwarzacz video&#10;Obsługiwane formaty: .mp4 .flv .mp3 .wav        &#10;Wersja programu v1.0   &#10;Autor:ŁK       "
+			AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+			AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</TextArea>
+	</children>
+</AnchorPane>
